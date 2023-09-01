@@ -67,7 +67,7 @@ const ProductDetail = () => {
                 <div className="col-md-5">
                   <img src={img} alt={name} height={300} width={270} />
                 </div>
-                <div className="col-md-5 ms-2 ">
+                <div className="col-md-5 ">
                   <h2>Name : {name}</h2>
                   <p className="mt-1">Category : {category}</p>
                   <p>Info : {info}</p>
