@@ -50,7 +50,7 @@ const Home = () => {
             {modifiedCocktails.map(item => (
               <div className='col-md-4 mt-3  ' key={item.id}>
 
-                <div className="card" style={{ width: '19rem' }}>
+                <div className="card" style={{ width: '12rem' }}>
                   <img src={item.img} className="card-img-top" alt={item.name} />
                   <div className="card-body">
                     <h5 className="card-title">{item.name}</h5>
