@@ -14,10 +14,10 @@ function App() {
 
     <div className="App">
       <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter baseName="/cocktail">
       <Header/>
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
+          <Route exact path='/' element={<Home/>}></Route>
           <Route path='/cart' element={<Cart/>}></Route>
         </Routes>
       </BrowserRouter>
