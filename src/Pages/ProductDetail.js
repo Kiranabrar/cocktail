@@ -65,7 +65,7 @@ const ProductDetail = () => {
               </Link>
               <div className="row mt-4">
                 <div className="col-md-5">
-                  <img src={img} alt={name} height={300} width={300} />
+                  <img src={img} alt={name} height={300} width={270} />
                 </div>
                 <div className="col-md-5 ms-4 ">
                   <h2>Name : {name}</h2>
