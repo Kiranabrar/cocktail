@@ -1,28 +1,25 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import store from './store/store';
-import Home from './pages/Home';
-import Cart from './pages/Cart';
-import Header from './components/Header';
-
+import Contact from './Pages/Contact';
+import About from './Pages/About';
+import Home from './Pages/Home';
+import ProductDetail from './Pages/ProductDetail';
 
 
 function App() {
-
   return (
-
-    <div className="App">
-      <Provider store={store}>
-      <BrowserRouter baseName="/cocktail">
-      <Header/>
-        <Routes>
-          <Route exact path='/' element={<Home/>}></Route>
-          <Route path='/cart' element={<Cart/>}></Route>
-        </Routes>
+    <>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/products/:id' element={<ProductDetail/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/contact' element={<Contact/>} />
+      </Routes>
+      
       </BrowserRouter>
-</Provider>
-    </div>
+    
+    </>
   );
 }
 

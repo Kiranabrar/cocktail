@@ -1,36 +1,225 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
 
+}
+.about-us{
+height: 100vh;
+width: 100%;
+padding: 20px 0;
+background: #252323;
+}
+.pic{
+height: auto;
+width:  302px;
+}
+@media only screen and (max-width:800px){
+    .pic {
+        width: 250px;
+        height: auto;
+    }
+}
+.about{
+width: 1100px;
+height: full;
+max-width: 85%;
+margin: 0 auto;
+display: block;
+align-items: center;
+justify-content: space-around;
+}
+@media only screen and (min-width:800px){
+    .about {
+    display: flex;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}}
+.text{
+height: auto;
+color: #d7d6d6;
+}
+.text h3{
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+.text h5{
+font-size: 22px;
+font-weight: 500;
+margin-bottom: 10px;
+}
+span{
+color: #4070f4;
+}
+.text p{
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 1px;
+}
+.data{
+margin-top: 30px;
+}
+.hire{
+font-size: 18px;
+background: #4070f4;
+color: #fff;
+text-decoration: none;
+border: none;
+padding: 8px 25px;
+border-radius: 6px;
+transition: 0.5s;
+}
+.hire:hover{
+background: #000;
+border: 1px solid #4070f4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.container2{
+    min-height: 100vh;
+    min-width: 100%;
+    background: #08071d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /*background: url("bg.png") no-repeat center center/cover;
+    background: url("light-cocktail.jpg") no-repeat center center/cover;*/
+    background: url("dark-cocktail.jpg") no-repeat center center/cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
+.container2 form{
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.container2 form h1{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container2 form input{
+    width: 290px;
+    height: 40px;
+    color: #ffffff;
+    padding-left: 10px;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+
+.container2 form input::placeholder{
+    color: #ddd;
+}
+
+.container2 form #subject{
+    margin-left: 50px;
+}
+
+.container2 form h5{
+    color: #fff;
+    font-weight: 100;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.container2 form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+textarea::-webkit-scrollbar{
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(194,194,194,0.713);
+}
+
+.container2 form #button{
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.container2 form #button:hover{
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+.hero-img {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.hero-img::before {
+    content: "";
+    background: url('./dark-cocktail.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+    .hero-img h1 {
+        font-size: 2rem
+    }
 }
